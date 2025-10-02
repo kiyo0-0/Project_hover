@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(bike__bg.jpg);
+    background-size: cover;
+}
+
+
+
+#hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+#hero>img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(hsla(0, 0%, 32%, 0.545), rgba(0, 0, 0, 0.512)); 
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);    
+}
+
+#hero h1{
+    position: absolute;
+    color: #d2d2d2;
+    text-align: left;
+    font-size: 6em;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom:10%;
+    text-align: center;
+    mix-blend-mode:difference;
+    top: 40%;
+}
+
+#hero ul{
+    position: absolute;
+    color: #d2d2d2;
+    bottom: 100px;
+    left:90px
+}
+
+#hero li{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    list-style-type: square;
+    line-height: 1.5em;
+}
+
+#hero button{
+    position: relative;
+    height: 60px;
+    width: 250px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #d2d2d2;
+    font-size: 1em;
+    align-items: center;
+    text-align: end;
+    padding-right: 15px;
+    top: 34.5%;
+    left: 35%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: rgba(210, 210, 210, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(210, 210, 210, 0.26);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#hero button img{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 80%;
+    align-self: center;
+}
+
+#hero button:hover {
+   background-color: #80808020;
+}
+
+#hero button:hover img{
+    animation: rotatewheel 1.2s linear infinite;
+}
+
+@keyframes rotatewheel{
+    to{
+        rotate: 360deg;
+    }
+}
